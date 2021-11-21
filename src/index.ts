@@ -34,6 +34,6 @@ app.get("/blog_posts/:id", (req, res) => {
 	res.send({ post });
 });
 
-app.listen(process.env.PORT, () =>
+app.listen(process.env.PORT || 3000, () =>
 	console.log(`Listening on port ${process.env.PORT}`)
 );

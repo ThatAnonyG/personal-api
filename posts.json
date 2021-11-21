@@ -1,0 +1,43 @@
+[
+	{
+		"_id": {
+			"$oid": "619aa3bfa104a5d6b1182ccf"
+		},
+		"id": 1,
+		"date": 1637524481494,
+		"author": "John Doe",
+		"title": "My first blog post",
+		"content": "This is my first blog post"
+	},
+	{
+		"_id": {
+			"$oid": "619aa47da104a5d6b1182cd1"
+		},
+		"id": 2,
+		"date": 1637524635603,
+		"author": "ThatAnonyG",
+		"title": "My third blog post",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	},
+	{
+		"_id": {
+			"$oid": "619aaa2b3c348c5e0c60ba3f"
+		},
+		"id": 3,
+		"date": 1637526059343,
+		"author": "Jane Doe",
+		"title": "My second blog post",
+		"content": "This is my second blog post"
+	},
+	{
+		"_id": {
+			"$oid": "619aae43c66066c9b4f4638b"
+		},
+		"id": 4,
+		"date": 1637527107893,
+		"author": "Jane Doe",
+		"title": "My second blog post",
+		"content": "This is my second blog post",
+		"__v": 0
+	}
+]

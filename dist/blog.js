@@ -1,26 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.blogPosts = void 0;
-exports.blogPosts = [
-    {
-        id: 1,
-        date: Date.now(),
-        author: "John Doe",
-        title: "My first blog post",
-        content: "This is my first blog post",
-    },
-    {
-        id: 2,
-        date: Date.now(),
-        author: "Jane Doe",
-        title: "My second blog post",
-        content: "This is my second blog post",
-    },
-    {
-        id: 3,
-        date: Date.now(),
-        author: "ThatAnonyG",
-        title: "My third blog post",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-];
+exports.BlogPostModel = exports.BlogPostSchema = void 0;
+const mongoose_1 = require("mongoose");
+const BlogPostSchema = new mongoose_1.Schema({
+    id: { type: Number, required: true },
+    date: { type: Number, required: true },
+    author: { type: String, required: true },
+    title: { type: String, required: true },
+    content: { type: String, required: true },
+});
+exports.BlogPostSchema = BlogPostSchema;
+const BlogPostModel = (0, mongoose_1.model)("posts", BlogPostSchema);
+exports.BlogPostModel = BlogPostModel;
